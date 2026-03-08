@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/CustomTable"
+        android:stretchColumns="1">
+
+        <!-- SECCIÓN: PERFIL PROFESIONAL -->
+        <TableRow
+            style="@style/CustomTable.Header"
+            android:layout_width="344dp">
+
+            <TextView
+                style="@style/CustomTable.Header"
+                android:layout_span="2"
+                android:text="Perfil Profesional" />
+
+            <TextView
+                android:id="@+id/textView2"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="............"
+                android:visibility="invisible" />
+        </TableRow>
+
+        <TableRow style="@style/CustomTable.row">
+            <TextView
+                android:text="Especialidad:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="247dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="Consultor IT &amp; Infraestructura" />
+        </TableRow>
+
+        <TableRow style="@style/CustomTable.row">
+            <TextView
+                android:text="Ubicación:"
+                android:textStyle="bold" />
+            <TextView
+                android:text="Coquimbo, Chile"
+                android:gravity="end" />
+        </TableRow>
+
+        <TableRow style="@style/CustomTable.row">
+            <TextView
+                android:text="Movilidad:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="11dp"
+                android:gravity="end"
+                android:text="Licencia B (Vehículo Propio)" />
+        </TableRow>
+
+        <!-- SECCIÓN: EXPERIENCIA DESTACADA -->
+        <TableRow style="@style/CustomTable.Header">
+
+            <TextView
+                style="@style/CustomTable.Header"
+                android:layout_span="2"
+                android:text="Experiencia" />
+        </TableRow>
+
+        <TableRow style="@style/CustomTable.row">
+            <TextView
+                android:text="Actual:"
+                android:textStyle="bold" />
+            <TextView
+                android:text="Consultor Freelance (IBM, Entel)"
+                android:gravity="end" />
+        </TableRow>
+
+        <TableRow style="@style/CustomTable.row">
+            <TextView
+                android:text="Anterior:"
+                android:textStyle="bold" />
+            <TextView
+                android:text="Técnico Terreno (Avant, SSISA)"
+                android:gravity="end" />
+        </TableRow>
+
+        <!-- SECCIÓN: HABILIDADES TÉCNICAS -->
+        <TableRow
+            style="@style/CustomTable.Header"
+            android:layout_width="373dp">
+
+            <TextView
+                style="@style/CustomTable.Header"
+                android:layout_span="2"
+                android:text="Habilidades" />
+
+        </TableRow>
+
+        <TableRow style="@style/CustomTable.row">
+            <TextView
+                android:text="Soporte:"
+                android:textStyle="bold" />
+            <TextView
+                android:text="SLA, Redes, Hardware Refresh"
+                android:gravity="end" />
+        </TableRow>
+
+        <TableRow style="@style/CustomTable.row">
+            <TextView
+                android:text="Desarrollo:"
+                android:textStyle="bold" />
+            <TextView
+                android:text="Java, SQL, Spring, JS"
+                android:gravity="end" />
+        </TableRow>
+
+    </TableLayout>
+
+</androidx.core.widget.NestedScrollView>
